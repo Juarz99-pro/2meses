@@ -1,0 +1,51 @@
+<!doctype html><html lang='es'><head>
+<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Nuestros 2 Meses ❤️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="bg"></div>
+<section class="hero glass">
+<h1>Nuestros 2 Meses<br>Como Esposos ❤️</h1>
+<p>Dos meses que cambiaron mi vida para siempre.</p>
+<a class="btn" href="#player">Comenzar nuestro viaje</a>
+</section>
+
+<section id="player" class="glass card">
+<h2>🎵 Nuestra Canción</h2>
+<div class="player">
+<div class="cover"><img src="img/cover.jpg"></div>
+<div class="meta"><h3>Te amo ❤️ </h3><small>Odisseo - Los Imanes</small>
+<audio id="audio" src="music/cancion.mp3"></audio>
+<div class="controls">
+<button onclick="audio.play()">▶</button>
+<button onclick="audio.pause()">⏸</button>
+</div>
+<input id="progress" type="range" min="0" max="100" value="0">
+</div></div>
+</section>
+
+<section class="glass card">
+<h2>Nuestra boda</h2>
+<div class="carousel">
+<button onclick="move(-1)">❮</button>
+<div class="stage">
+<img id="left"><img id="center"><img id="right">
+</div>
+<button onclick="move(1)">❯</button>
+</div>
+</section>
+
+<section class="glass card">
+<h2>💌 Para Ti</h2>
+<p id="letter"></p>
+</section>
+
+<section class="glass card">
+<h2>⏳ Nuestro Tiempo Casados</h2>
+<div id="counter"></div>
+</section>
+
+<script src="script.js"></script>
+</body></html>

@@ -1,0 +1,1 @@
+Agrega img/01.jpg a img/20.jpg, img/cover.jpg y music/cancion.mp3
